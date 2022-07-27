@@ -1,0 +1,16 @@
+<div id="<%= dom_id article %>">
+  <p>
+    <strong>Title:</strong>
+    <%= article.title %>
+  </p>
+
+  <p>
+    <strong>Content:</strong>
+    <%= article.content %>
+  </p>
+<button data-action="request#getIndexData"> Show Data </button>
+<button data-action="request#createData"> Create Random Data </button>
+<button data-action="request#updateData" id="<%= article.id %>"> Update Random Data </button>
+<button data-action="request#destroyData" id="<%= article.id %>"> Destroy  Data </button>
+
+</div>
